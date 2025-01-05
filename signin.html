@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - VogueVault</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo-transparent-png.png" alt="VogueVault Logo">
+        </div>
+        <a href="index.html" class="home-icon" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="signin-section">
+        <div class="signin-container">
+            <h1 id="form-title">Welcome to VogueVault</h1>
+
+            <!-- Sign In Form -->
+            <form id="signin-form" class="signin-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form" class="signin-form hidden">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p>OR</p>
+            <button class="guest-btn" onclick="window.location.href='main.html'">Continue as Guest</button>
+
+            <div class="alt-options">
+                <a id="toggle-link" href="#" onclick="toggleForm()">Don't have an account? Sign up</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>        
+    </section>
+
+    <script>
+        const signinForm = document.getElementById("signin-form");
+        const signupForm = document.getElementById("signup-form");
+        const formTitle = document.getElementById("form-title");
+        const toggleLink = document.getElementById("toggle-link");
+
+        // Toggle between sign-in and sign-up forms
+        function toggleForm() {
+            if (signinForm.classList.contains("hidden")) {
+                signinForm.classList.remove("hidden");
+                signupForm.classList.add("hidden");
+                formTitle.textContent = "Welcome to VogueVault";
+                toggleLink.textContent = "Don't have an account? Sign up";
+            } else {
+                signinForm.classList.add("hidden");
+                signupForm.classList.remove("hidden");
+                formTitle.textContent = "Create Your VogueVault Account";
+                toggleLink.textContent = "Already have an account? Sign in";
+            }
+        }
+
+        // Handle sign-in form submission
+        signinForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = signinForm.querySelector("input[type='email']").value;
+            const password = signinForm.querySelector("input[type='password']").value;
+
+            fetch("https://supreme-accurate-aurora.glitch.me/signin", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email, password }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === "Sign-in successful") {
+                    alert("Welcome back!");
+                    window.location.href = "main.html";
+                } else {
+                    alert("Error: " + data.message);
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Something went wrong. Please try again later.");
+            });
+        });
+
+        // Handle sign-up form submission
+        signupForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = signupForm.querySelector("input[type='text']").value;
+            const email = signupForm.querySelector("input[type='email']").value;
+            const password = signupForm.querySelector("input[type='password']").value;
+
+            fetch("https://supreme-accurate-aurora.glitch.me/signin", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email, password }),
+            })
+            
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === "Sign-up successful") {
+                    alert("Account created successfully. Please sign in.");
+                    toggleForm();
+                } else {
+                    alert("Error: " + data.message);
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Something went wrong. Please try again later.");
+            });
+        });
+    </script>
+</body>
+</html>

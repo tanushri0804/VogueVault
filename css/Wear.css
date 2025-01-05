@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f5ff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #d1cfe2;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.user-options {
+    display: flex;
+    gap: 45px;
+}
+
+.user-options i {
+    font-size: 20px;
+    color: #5a5a89;
+    cursor: pointer;
+}
+
+/* Product Grid for Ethnic Wear */
+.product-grid {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card .actions button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #5a5a89;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-card .actions button:hover {
+    background-color: #494d76;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    grid-template-rows: repeat(5, auto); /* 5 rows */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    max-width: 140px;
+    margin-right: 0px;
+}
+
+.navbar .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sign In Page */
+.signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.signin-container {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.signin-container h1 {
+    color: #5a5a89;
+    margin-bottom: 20px;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signin-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signin-form button {
+    padding: 10px;
+    background-color: #5a5a89;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin-form button:hover {
+    background-color: #8a8ad3;
+}
+
+.alt-options {
+    margin-top: 20px;
+}
+
+.alt-options a {
+    display: block;
+    color: rgb(87, 48, 92);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.alt-options a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}

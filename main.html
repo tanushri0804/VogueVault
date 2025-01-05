@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VogueVault</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="64x64"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-transparent-png.png" alt="VogueVault Logo">
+                </a>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li><a href="mens-wear.html"><b>MEN</b></a></li>
+                    <li><a href="women-wear.html"><b>WOMEN</b></a></li>
+                    <li><a href="kids-wear.html"><b>KIDS</b></a></li>
+                    <li><a href="casual.html"><b>CASUAL WEAR</b></a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-options">
+                <div class="profile">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="wishlist" onclick="showWishlist()">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="bag" onclick="showBag()">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content"> 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-banner">
+        </div>
+    </section>
+<!-- Shop by Category Section -->
+<section class="shop-by-category">
+    <h2>Shop by Category</h2>
+    <div class="grid">
+        <div class="category-card">
+            <a href="ethnic-wear.html">
+                <img src="https://shreeman.in/cdn/shop/files/Tulip06Mar230457copy.jpg?v=1720520975&width=1667" alt="Ethnic Wear">
+                <h3>Ethnic Wear</h3>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="casual.html">
+                <img src="https://i.pinimg.com/474x/c8/f6/9c/c8f69c89afdbe2733d7fe8bdcaa3fdbd.jpg" alt="Casual Wear">
+                <h3>Casual Wear</h3>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="mens-wear.html">
+                <img src="https://i.pinimg.com/736x/4d/13/da/4d13da0f2fd161fe399aaeab9b93f2c9.jpg" alt="Men's Wear">
+                <h3>Men's Wear</h3>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="women-wear.html">
+                <img src="https://thejodilife.com/cdn/shop/files/4_52bb5c4f-9247-4f25-96f2-06bbc62ef35e.jpg?v=1694078799" alt="Women's Wear">
+                <h3>Women's Wear</h3>
+            </a>
+        </div>
+        <div class="category-card">
+            <a href="kids-wear.html">
+                <img src="https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-polyester-gown-with-attached-dupatta-in-olive-green-and-beige-v1-uku1593.jpg" alt="Kids' Wear">
+                <h3>Kids' Wear</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Products Section -->
+    <section class="product-grid">
+        <h2>Featured Products</h2>
+        <div class="grid">
+            <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1leQXqCdDHEcw3weailC74128bnoZVTI5bQ&s" alt="Classic T-Shirt">
+                    <h3>Classic T-Shirt</h3>
+                    <p>₹1,599</p>
+                <div class="actions">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+            </div>            
+            <div class="product-card">
+                <img src="https://img.drz.lazcdn.com/static/bd/p/f82927a79088d7dc82965f6cd5d291be.jpg_720x720q80.jpg" alt="Product 2">
+                <h3>Denim Jacket</h3>
+                <p>₹3,999</p>
+                <div class="actions">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51jslggR6jL._AC_UY1000_.jpg" alt="Product 3">
+                <h3>Casual Sneakers</h3>
+                <p>₹2,399</p>
+                <div class="actions">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i5.walmartimages.com/seo/Long-sleeve-dress-for-women-Polyester-Beige-M_beb76203-ae78-4a72-9178-04411fba738f.c752b8ade90bceba5b598cc91a9c4bd5.jpeg" alt="Product 4">
+                <h3>Summer Dress</h3>
+                <p>₹3,199<</p>
+                <div class="actions">
+                    <button class="wishlist-btn" ><i class="fas fa-heart"></i> Wishlist</button>
+                    <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+<section class="product-grid">
+    <h2>New Arrivals</h2>
+    <div class="grid">
+        <div class="product-card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240322/iteW/65fcf4c305ac7d77bbd132cf/-1117Wx1400H-462895038-maroon-MODEL.jpg" alt="Product 5">
+            <h3>Leather Wallet</h3>
+            <p>₹1,999</p>
+            <div class="actions">
+                <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20210216/EWwz/602accd4aeb2696981661cba/-473Wx593H-460545300-red-MODEL.jpg" alt="Product 6">
+            <h3>Formal Shirt</h3>
+            <p>₹2,799</p>
+            <div class="actions">
+                <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240713/RYgu/66922da46f60443f3106a1c1/-473Wx593H-464805313-brown-MODEL.jpg" alt="Product 7">
+            <h3>Sunglasses</h3>
+            <p>₹1,199</p>
+            <div class="actions">
+                <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240109/iorz/659d61ed54c30e6276a01dda/-1117Wx1400H-469584839-green-MODEL.jpg" alt="Product 8">
+            <h3>Running Shoes</h3>
+            <p>₹4,799</p>
+            <div class="actions">
+                <button class="wishlist-btn"><i class="fas fa-heart"></i> Wishlist</button>
+                <button class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Best Sellers Section -->
+    <section class="product-grid">
+        <h2>Best Sellers</h2>
+        <div class="grid">
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240509/dWay/663cb79e16fd2c6e6af6824d/-473Wx593H-467124908-black-MODEL.jpg" alt="Product 9">
+                <h3>Wrist Watch</h3>
+                <p>₹4,999</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240606/lqZ4/6661931e05ac7d77bba21c71/-473Wx593H-466884722-brown-MODEL.jpg" alt="Product 10">
+                <h3>Backpack</h3>
+                <p>₹1,799</p>
+            </div>
+            
+
+            <div class="product-card">
+                <img src="https://imagescdn.louisphilippe.com/img/app/product/8/890819-10780448.jpg?auto=format&w=390" alt="Product 11">
+                <h3>Leather Wallet</h3>
+                <p>₹2,499</p>
+            </div>
+            
+
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/v/q/r/-original-imagtajgmymkcp2k.jpeg?q=90&crop=false" alt="Product 12">
+                <h3>Running Shoes</h3>
+                <p>₹3,599</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6W_TzlkEIXjLJSkFw8J1KPzQMWWqGCqWB1A&s" alt="Product 13">
+                <h3>Smartphone</h3>
+                <p>₹19,999</p>
+            </div>
+        </div>
+    </section>
+    
+</main>
+<section id="wishlist-section" class="hidden">
+    <h2>Your Wishlist</h2>
+    <div class="grid" id="wishlist-items"></div>
+</section>
+
+<!-- Bag Section -->
+<section id="bag-section" class="hidden">
+    <h2>Your Bag</h2>
+    <div class="grid" id="bag-items"></div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 VogueVault. All rights reserved.</p>
+    </footer>
+</body>
+</html>
