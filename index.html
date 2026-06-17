@@ -1,151 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VogueVault</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="image/png" href="images/icon.png" sizes="64x64"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VogueVault – Premium Fashion</title>
+  <link rel="icon" type="image/png" href="images/icon.png" sizes="64x64" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo-transparent-png.png" alt="VogueVault Logo">
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Welcome Section -->
-        <section class="welcome">
-            <h1>Welcome to VogueVault</h1>
-            <p>Your one-stop destination for premium fashion and lifestyle products. Join us to explore the latest trends!</p>
-            <div class="cta-buttons">
-                <a href="signin.html" class="btn-primary">Sign In</a>
-                <a href="signin.html" class="btn-secondary">Sign Up</a>
-            </div>
-        </section>
+  <!-- ─── NAVBAR ─── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo-transparent-png.png" alt="VogueVault" />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="women-wear.html">Women</a>
+        <a href="mens-wear.html">Men</a>
+        <a href="kids-wear.html">Kids</a>
+        <a href="ethnic-wear.html">Ethnic</a>
+        <a href="casual.html">Casual</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="signin.html" class="btn-nav">Sign In</a>
+        <a href="signin.html" class="btn-nav btn-nav--fill">Sign Up</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="women-wear.html">Women</a>
+      <a href="mens-wear.html">Men</a>
+      <a href="kids-wear.html">Kids</a>
+      <a href="ethnic-wear.html">Ethnic</a>
+      <a href="casual.html">Casual</a>
+      <a href="signin.html">Sign In</a>
+      <a href="signin.html">Sign Up</a>
+    </div>
+  </header>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h2>Why Choose VogueVault?</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <i class="fas fa-truck"></i>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your orders delivered quickly with our reliable shipping partners.</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-thumbs-up"></i>
-                    <h3>Top Quality</h3>
-                    <p>Discover a curated selection of high-quality products.</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-headset"></i>
-                    <h3>24/7 Support</h3>
-                    <p>We're here to assist you anytime, anywhere.</p>
-                </div>
-            </div>
-        </section>
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <!-- Left: Text content -->
+    <div class="hero-left">
+      <span class="hero-tag"><i class="fas fa-bolt"></i> New Season — SS 2025</span>
+      <h1 class="hero-title">
+        Your Style,<br />
+        <em>Elevated.</em>
+      </h1>
+      <p class="hero-sub">Discover handpicked fashion for every occasion — from weekend casuals to wedding couture. Fresh drops every week.</p>
 
-        <!-- New Featured Collections Section -->
-        <section class="collections">
-            <h2>Featured Collections</h2>
-            <div class="collection-grid">
-                <div class="collection">
-                    <img src="https://cdndailyexcelsior.b-cdn.net/wp-content/uploads/2019/04/chatsrat-1.jpg" alt="Summer Collection">
-                    <h3>Summer Collection</h3>
-                    <p>Light, breezy, and trendy outfits for the sunny season.</p>
-                </div>
-                <div class="collection">
-                    <img src="https://img.freepik.com/free-photo/girls-friends-meeting-together-winter-time-outside-street_1303-20037.jpg" alt="Winter Collection">
-                    <h3>Winter Collection</h3>
-                    <p>Stay warm and stylish with our cozy winter apparel.</p>
-                </div>
-                <div class="collection">
-                    <img src="https://cdn.shopify.com/s/files/1/0071/7406/2170/files/accessories-blog_1024x1024.jpg" alt="Accessories">
-                    <h3>Accessories</h3>
-                    <p>Complete your look with our stunning range of accessories.</p>
-                </div>
-            </div>
-        </section>
+      <div class="hero-btns">
+        <a href="signin.html" class="btn-primary">Shop the Collection <i class="fas fa-arrow-right"></i></a>
+        <a href="#collections" class="btn-ghost">Browse Looks</a>
+      </div>
 
-        <!-- Trending Now Section -->
-    <section class="trending">
-        <h2>Trending Now</h2>
-        <div class="trending-grid">
-            <div class="trending-item">
-                <img src="https://www.kawaiifashionshop.com/wp-content/uploads/2022/01/Summer-Chiffon-Elegant-Kawaii-Dress-Women-Floral-Print-Sweet-Princess-Casual-Midi-Dress-Female-Puff-Sleeve-2-200x200.jpg" alt="Trending Item 1">
-                <h3>Casual Summer Dress</h3>
-                <p>Perfect for warm days. Stylish and comfortable!</p>
-            </div>
-            <div class="trending-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3v5fx3mz0aufC2HnKm5TOUU1pRH4mQYGXEQ&s" alt="Trending Item 2">
-                <h3>Leather Tote Bag</h3>
-                <p>Carry everything you need with effortless style.</p>
-            </div>
-            <div class="trending-item">
-                <img src="https://s.alicdn.com/@sc04/kf/H77be45f39d2348eea747c4aed997bc40I.jpg_720x720q50.jpg" alt="Trending Item 3">
-                <h3>Chunky Sneakers</h3>
-                <p>The perfect combination of fashion and function.</p>
-            </div>
+      <!-- Stats row -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>50K+</strong>
+          <span>Happy Customers</span>
         </div>
-    </section>
-
-    <!-- New Customer Reviews Section -->
-    <section class="reviews">
-        <h2>What Our Customers Say</h2>
-        <div class="review-grid">
-            <div class="review">
-                <p>"VogueVault has transformed my wardrobe! The quality is exceptional, and delivery is super fast!"</p>
-                <span>- Jessica M.</span>
-            </div>
-            <div class="review">
-                <p>"I love their customer service. The team was so helpful with my queries!"</p>
-                <span>- Rahul K.</span>
-            </div>
-            <div class="review">
-                <p>"Trendy styles at amazing prices. VogueVault is my go-to for all fashion needs!"</p>
-                <span>- Emily R.</span>
-            </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>2K+</strong>
+          <span>Styles Available</span>
         </div>
-    </section>
-    <!-- Contact Us Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? We'd love to hear from you!</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </section>
-
-        <!-- New Newsletter Signup Section -->
-        <section class="newsletter">
-            <h2>Join Our Newsletter</h2>
-            <p>Subscribe to receive updates on the latest trends, exclusive deals, and more!</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit" class="btn-primary">Subscribe</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>© 2025 VogueVault. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>4.9★</strong>
+          <span>Average Rating</span>
         </div>
-    </footer>
-    <script src="js/script.js"></script>
+      </div>
+    </div>
+
+    <!-- Right: Visual collage -->
+    <div class="hero-right">
+      <div class="hero-collage">
+        <div class="hero-col hero-col--left">
+          <div class="hero-col-img hero-col-img--tall">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=85" alt="Fashion" />
+          </div>
+          <div class="hero-col-img hero-col-img--short">
+            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=500&q=80" alt="Fashion" />
+          </div>
+        </div>
+        <div class="hero-col hero-col--right">
+          <div class="hero-col-img hero-col-img--short">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&q=80" alt="Fashion" />
+          </div>
+          <div class="hero-col-img hero-col-img--tall">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=85" alt="Fashion" />
+          </div>
+        </div>
+      </div>
+      <!-- Subtle gradient fade on the left edge so it blends with the left side -->
+      <div class="hero-collage-fade"></div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE BAND ─── -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>Free Shipping on Orders Over ₹999</span>
+      <span>·</span>
+      <span>New Arrivals Every Week</span>
+      <span>·</span>
+      <span>Easy 30-Day Returns</span>
+      <span>·</span>
+      <span>Exclusive Member Discounts</span>
+      <span>·</span>
+      <span>Free Shipping on Orders Over ₹999</span>
+      <span>·</span>
+      <span>New Arrivals Every Week</span>
+      <span>·</span>
+      <span>Easy 30-Day Returns</span>
+      <span>·</span>
+      <span>Exclusive Member Discounts</span>
+      <span>·</span>
+    </div>
+  </div>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-label">Why VogueVault</div>
+      <h2 class="section-title">Fashion, Delivered Right</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h3>Express Delivery</h3>
+          <p>Get your order at your door in 2–4 business days with our reliable shipping partners.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Premium Quality</h3>
+          <p>Every piece is handpicked for quality, craftsmanship, and style that lasts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24 / 7 Support</h3>
+          <p>Our style experts are always here — chat, email, or call, whenever you need us.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-rotate-left"></i>
+          </div>
+          <h3>Easy Returns</h3>
+          <p>Changed your mind? No worries — hassle-free returns within 30 days, always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COLLECTIONS ─── -->
+  <section class="collections" id="collections">
+    <div class="section-inner">
+      <div class="section-label">Curated For You</div>
+      <h2 class="section-title">Featured Collections</h2>
+      <div class="collections-grid">
+        <div class="collection-card collection-card--wide">
+          <img src="https://cdndailyexcelsior.b-cdn.net/wp-content/uploads/2019/04/chatsrat-1.jpg" alt="Summer Collection" loading="lazy" />
+          <div class="collection-overlay">
+            <span class="collection-tag">Season Pick</span>
+            <h3>Summer Collection</h3>
+            <p>Light, breezy & trendy outfits for the sunny season.</p>
+            <a href="casual.html" class="btn-outline-white">Shop Summer</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="https://img.freepik.com/free-photo/girls-friends-meeting-together-winter-time-outside-street_1303-20037.jpg" alt="Winter Collection" loading="lazy" />
+          <div class="collection-overlay">
+            <span class="collection-tag">Trending</span>
+            <h3>Winter Collection</h3>
+            <p>Stay warm and stylish with cozy winter apparel.</p>
+            <a href="casual.html" class="btn-outline-white">Shop Winter</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="https://cdn.shopify.com/s/files/1/0071/7406/2170/files/accessories-blog_1024x1024.jpg" alt="Accessories" loading="lazy" />
+          <div class="collection-overlay">
+            <span class="collection-tag">Must Have</span>
+            <h3>Accessories</h3>
+            <p>Complete your look with stunning accessories.</p>
+            <a href="casual.html" class="btn-outline-white">Shop Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TRENDING ─── -->
+  <section class="trending" id="trending">
+    <div class="section-inner">
+      <div class="section-label">Hot Right Now</div>
+      <h2 class="section-title">Trending This Week</h2>
+      <div class="trending-grid">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://www.kawaiifashionshop.com/wp-content/uploads/2022/01/Summer-Chiffon-Elegant-Kawaii-Dress-Women-Floral-Print-Sweet-Princess-Casual-Midi-Dress-Female-Puff-Sleeve-2-200x200.jpg" alt="Casual Summer Dress" loading="lazy" />
+            <span class="product-badge">New</span>
+            <div class="product-actions">
+              <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+              <button aria-label="Quick view"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Women</span>
+            <h3>Casual Summer Dress</h3>
+            <div class="product-price">
+              <span class="price-current">₹1,299</span>
+              <span class="price-old">₹1,999</span>
+            </div>
+            <a href="signin.html" class="btn-add">Add to Bag</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3v5fx3mz0aufC2HnKm5TOUU1pRH4mQYGXEQ&s" alt="Leather Tote Bag" loading="lazy" />
+            <span class="product-badge product-badge--hot">Hot</span>
+            <div class="product-actions">
+              <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+              <button aria-label="Quick view"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3>Leather Tote Bag</h3>
+            <div class="product-price">
+              <span class="price-current">₹2,499</span>
+              <span class="price-old">₹3,499</span>
+            </div>
+            <a href="signin.html" class="btn-add">Add to Bag</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://s.alicdn.com/@sc04/kf/H77be45f39d2348eea747c4aed997bc40I.jpg_720x720q50.jpg" alt="Chunky Sneakers" loading="lazy" />
+            <div class="product-actions">
+              <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+              <button aria-label="Quick view"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Footwear</span>
+            <h3>Chunky Sneakers</h3>
+            <div class="product-price">
+              <span class="price-current">₹3,299</span>
+              <span class="price-old">₹4,500</span>
+            </div>
+            <a href="signin.html" class="btn-add">Add to Bag</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=400&q=80" alt="Ethnic Kurti" loading="lazy" />
+            <span class="product-badge product-badge--sale">Sale</span>
+            <div class="product-actions">
+              <button aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+              <button aria-label="Quick view"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Ethnic</span>
+            <h3>Designer Kurti</h3>
+            <div class="product-price">
+              <span class="price-current">₹899</span>
+              <span class="price-old">₹1,499</span>
+            </div>
+            <a href="signin.html" class="btn-add">Add to Bag</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STYLE BANNER ─── -->
+  <section class="style-banner">
+    <div class="style-banner-inner">
+      <div class="style-banner-text">
+        <span class="section-label" style="color:#c9b8ff">Limited Offer</span>
+        <h2>Up to 50% Off<br />on New Arrivals</h2>
+        <p>Don't miss out — our seasonal sale ends soon. Grab your favourites before they're gone.</p>
+        <a href="signin.html" class="btn-primary">Shop the Sale</a>
+      </div>
+      <div class="style-banner-img">
+        <img src="images/Banner.webp" alt="Sale Banner" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REVIEWS ─── -->
+  <section class="reviews" id="reviews">
+    <div class="section-inner">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"VogueVault has completely transformed my wardrobe! The quality is exceptional and delivery is super fast. Highly recommend to anyone who loves fashion."</p>
+          <div class="review-author">
+            <div class="review-avatar">J</div>
+            <div>
+              <strong>Jessica M.</strong>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card review-card--featured">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"The customer service team is absolutely wonderful. They resolved my query instantly and helped me pick the right size. 10/10 experience!"</p>
+          <div class="review-author">
+            <div class="review-avatar">R</div>
+            <div>
+              <strong>Rahul K.</strong>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>"Trendy styles at amazing prices. VogueVault is now my absolute go-to for all my fashion needs. The ethnic collection is fire!"</p>
+          <div class="review-author">
+            <div class="review-avatar">E</div>
+            <div>
+              <strong>Emily R.</strong>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-info">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title" style="text-align:left">We'd Love to<br />Hear From You</h2>
+        <p>Have questions, feedback, or need styling advice? Drop us a message and we'll get back to you within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@voguevault.in</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Mumbai, Maharashtra, India</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-name">Your Name</label>
+            <input type="text" id="c-name" placeholder="Priya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" placeholder="priya@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" placeholder="Order query / Styling help..." />
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i> Message sent! We'll be in touch soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── NEWSLETTER ─── -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h2>Stay Ahead of the Trend</h2>
+        <p>Subscribe for early access to new drops, exclusive discounts, and curated style guides.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo-transparent-png.png" alt="VogueVault" />
+        <p>Your one-stop destination for premium fashion. Dress boldly, live fashionably.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="women-wear.html">Women's Wear</a></li>
+          <li><a href="mens-wear.html">Men's Wear</a></li>
+          <li><a href="kids-wear.html">Kids' Wear</a></li>
+          <li><a href="ethnic-wear.html">Ethnic Wear</a></li>
+          <li><a href="casual.html">Casual</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 VogueVault. All rights reserved. Made with <i class="fas fa-heart" style="color:#c084fc"></i> in India.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('show');
+    });
+
+    // Contact form
+    function handleContact(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').style.display = 'flex';
+      e.target.reset();
+      setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 4000);
+    }
+
+    // Newsletter form
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = '#22c55e';
+      e.target.querySelector('input').value = '';
+      setTimeout(() => { btn.innerHTML = 'Subscribe <i class="fas fa-arrow-right"></i>'; btn.style.background = ''; }, 3000);
+    }
+  </script>
 </body>
 </html>
